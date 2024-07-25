@@ -1,9 +1,6 @@
 package com.darkthor.customer_server.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.lang.annotation.Documented;
@@ -20,6 +17,7 @@ public class Customer {
     private Long id;
     private String firstname;
     private String lastname;
+    @Embedded
     private Address address;
     private String email;
 

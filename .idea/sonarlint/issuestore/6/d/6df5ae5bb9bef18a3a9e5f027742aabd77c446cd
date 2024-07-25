@@ -4,3 +4,5 @@ java:S2293D"YReplace the type specification in this constructor call with the d
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬úù´úÿÿÿÿ8²àœÈ2
 _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´àœÈ2
+G
+java:S1128"*Remove this unused import 'lombok.Getter'.(ùÒµÙ8Úñ×¼2

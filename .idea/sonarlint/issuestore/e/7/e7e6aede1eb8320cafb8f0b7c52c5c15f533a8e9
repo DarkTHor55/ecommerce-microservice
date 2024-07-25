@@ -5,3 +5,5 @@ java:S6813"BRemove this field injection and use constructor injection instead.
 P
 java:S6856&".Bind path variable "id" to a method parameter.(ªä´«øÿÿÿÿ8ÒÁáÎ2
 X	java:S125A"<This block of commented-out lines of code should be removed.(ñĞ—8šÊêÎ2
+G
+java:S1128	"*Remove this unused import 'lombok.Getter'.(ùÒµÙ8ÆŸÚ¼2

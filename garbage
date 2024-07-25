@@ -1,1 +1,7 @@
 2 38 for if global excption mai koi error ae to
+
+RestTemplate  makes it easy to consume RESTful web services in your application.
+And  making HTTP requests in Spring Boot. With its various  methods for making GET, POST, PUT, and DELETE requests, as well as its ability to handle responses and exceptions
+
+
+The Feign client is a declarative REST client that makes writing web clients easier. When using Feign, the developer has only to define the interfaces and annotate them accordingly. The actual web client implementation is then provided by Spring at runtime

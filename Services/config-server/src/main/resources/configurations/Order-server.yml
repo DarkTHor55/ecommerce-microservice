@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/product
+    username: root
+    password: Rohit@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9093
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframewotk.kafka.support.serializer.jsonSerializer
+      properties:
+        spring.jason.type.mapping: orderConfirmation:com.darkthor.Kafka.OrderConfirmation
+server:
+  port: 8070
+
+
+application:
+  config:
+    customer-url: https://localhost:8222/api/v1/customer
+    payment-url: https://localhost:8222/api/v1/payment
+    product-url: https://localhost:8222/api/v1/product
+
