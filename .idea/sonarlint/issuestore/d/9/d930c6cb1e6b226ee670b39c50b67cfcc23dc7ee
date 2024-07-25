@@ -1,0 +1,15 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷¸şÿÿÿÿ
+S
+java:S1128"6Remove this unused import 'org.hibernate.Interceptor'.(ËÖÁª8•µé¿2
+H
+java:S1068"&Remove this unused "id" private field.(ôç¼Óşÿÿÿÿ8–µé¿2
+E
+java:S1068	"(Remove this unused "name" private field.(Ë¥¼8•½ê¿2
+Q
+java:S1068
+"/Remove this unused "description" private field.(ÇÓæâıÿÿÿÿ8ˆ…ë¿2
+N
+java:S1068",Remove this unused "quantity" private field.(ñÒÅ²ùÿÿÿÿ8ˆ…ë¿2
+F
+java:S1068")Remove this unused "price" private field.(ìù¥ë8–½ê¿2
