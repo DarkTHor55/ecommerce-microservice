@@ -5,6 +5,8 @@ import com.darkthor.Execption.BusinessExecption;
 import com.darkthor.Kafka.OrderConfirmation;
 import com.darkthor.Kafka.OrderProducer;
 import com.darkthor.Model.Orders;
+import com.darkthor.Payment.PaymentClient;
+import com.darkthor.Payment.PaymentRequest;
 import com.darkthor.Product.ProductClient;
 import com.darkthor.Repository.OrderRepository;
 import com.darkthor.Request.OrderLineRequest;
@@ -29,6 +31,7 @@ public class OrderService {
     private final OrderMapper mapper;
     private final OrderLineService orderLineService;
     private final OrderProducer orderProducer;
+    private final PaymentClient paymentClient;
     public Integer createOrder(OrderRequest orderRequest) throws BusinessExecption {
 //        Check customer by openFeign
         var customer=this.customerClient.findCustomerById(String.valueOf(orderRequest.getCustomerId())).orElseThrow(()->new BusinessExecption("Cannot create order  :: No customer exists with provided id : "+orderRequest.getCustomerId())) ;
@@ -49,6 +52,18 @@ public class OrderService {
         }
 
 //       todo start paymentsProcess
+        var paymentRequest = new PaymentRequest(
+                orderRequest.getAmount(),
+                orderRequest.getPaymentMethod(),
+                orderRequest.getId(),
+                orderRequest.getReference(),
+                customer
+
+        );
+        paymentClient.requestOrderPayment(paymentRequest);
+
+
+
         orderProducer.sendOrderConformation(
                 new OrderConfirmation(
                         orderRequest.getReference(),

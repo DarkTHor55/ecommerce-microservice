@@ -1,0 +1,6 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŞÂ›+
+X
+java:S1128";Remove this unused import 'jakarta.persistence.JoinColumn'.(İçÆ•8‚—é2
+\
+java:S1128":Remove this unused import 'jakarta.persistence.ManyToOne'.(áîÖãùÿÿÿÿ8‚‚—é2

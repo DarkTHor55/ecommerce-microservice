@@ -1,0 +1,6 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„÷¼³ıÿÿÿÿ8ùºÜÒ2
+c
+java:S1128"ARemove this unused import 'jakarta.validation.constraints.Email'.(Öï¤Âıÿÿÿÿ8úµ‘é2
+e
+java:S1128"CRemove this unused import 'jakarta.validation.constraints.NotNull'.(Àª•ıÿÿÿÿ8úµ‘é2
